@@ -19,7 +19,6 @@ $(document).ready(function () {
     let progressBarSleep = document.getElementById("barSleep").ariaValueNow;
     let progressBarBoring = document.getElementById("barBoring").ariaValueNow;
     let restart = document.getElementById("restart");
-    let chewbacca = document.getElementById("chewbacca");
     let starwars = document.getElementById("starwars");
     let w = window.innerWidth;
     let intro = document.getElementsByClassName("intro")[0];
