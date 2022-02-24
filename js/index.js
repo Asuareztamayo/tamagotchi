@@ -158,22 +158,21 @@ $(document).ready(function () {
 
     function playing() {
         Swal.fire({
-            imageUrl:
-                "https:i.pinimg.com/originals/2c/e0/5c/2ce05ce314320a11109aac94dc064472.gif",
+            imageUrl: "img/yodaJuega.gif",
             imageAlt: "Playing",
         });
     }
 
     function sleeping() {
         Swal.fire({
-            imageUrl: "https:c.tenor.com/Zp8J9752tWoAAAAd/the-mandalorian-grogu.gif",
+            imageUrl: "img/yodaDuerme.gif",
             imageAlt: "Sleep grogu, sleep",
         });
     }
 
     function eating() {
         Swal.fire({
-            imageUrl: "https:c.tenor.com/gZGaBbiugOIAAAAd/the-mandalorian-grogu.gif",
+            imageUrl: "img/yodaCome.gif",
             imageAlt: "Grogu eats",
         });
     }
