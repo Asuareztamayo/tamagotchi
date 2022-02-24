@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi Grogu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/yodaFeliz.png">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <img src="img/fondo.gif" alt="fondoStarWars" class="wallpaper" id="fondo1" style="display: block;">
+    <img src="img/fondo2.jpg" alt="fondostarwar" style="display: none;" id="fondo2" class="wallpaper">
+    <main id="home" style="display: block;">
+        <div class="beginning">
+            <button class="btnBrown" id="start">START</button>
+            <audio src="sounds/ringtones-star-wars.mp3" id="starwars"></audio>
+            <img src="img/logo.png" alt="logoJuego" class="logo">
+            <button class="btnBrown" id="btnInfo">INFO</button>
+        </div>
+    </main>
+    <main id="info"  style="display: none;" class="info">
+        <div>
+            <button id="btnBack">
+                <span class="iconify" data-icon="akar-icons:arrow-back-thick">
+                </span>
+            </button>
+        </div>
+        <section class="intro texto_intro">
+            A week ago we were asked <br> to make a tamagotchi,<br>  and this is the result. <br> To play follow the instructions below
+        </section>
+        <section class="parrafos">
+            <div class="historia textos_historia">
+                <p>To keep him/her alive you have to be aware of his/her needs of food, tiredness and boredom.</p>
+                <p>If any of the needs go up to 5, your character will die.</p>
+                <p>Click on the image of the need you want to give to the character.</p>
+                <p>If the needs are maxed out, you will not be able to give them more.</p>
+            </div>
+        </section>
+    </main>
+    <main id="game" style="display: none;">
+        <div>
+            <button id="backHome">
+                <span class="iconify" data-icon="akar-icons:arrow-back-thick">
+                </span>
+            </button>
+        </div>
+        <section>
+            <div></div>
+            <div></div>
+        </section>
+        <section class="d-flex w-100 align-items-center m-5">
+            <div class="col-6">
+                <div class="d-flex flex-row align-items-center">
+                    <div class="col-2"> 
+                        <img src="img/comida-removebg-preview.png" alt="food" class="photo" id="burger">
+                        <audio src="sounds/chewbacca.mp3" id="chewbacca"></audio>
+                    </div>
+                    <div class="progress w-50 col-4" >
+                        <div id="barFood" class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                    <div class="col-2"> 
+                        <img src="img/zzz-removebg-preview.png" alt="sleep" class="photo" id="sleep">
+                    </div>
+                    <div class="progress w-50 col-4">
+                        <div  id="barSleep" class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                    <div class="col-2"> 
+                        <img src="img/pelota-removebg-preview.png" alt="ball" class="photo" id="bored">
+                    </div>
+                    <div class="progress w-50 col-4">
+                        <div  id="barBoring" class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="img/yodaFeliz.png" alt="yodaHappy" style="display: block;" id="happy">
+                <img src="img/yodaTriste-removebg-preview.png" alt="sadYoda" style="display: none;" id="sad">
+            </div>
+        </section>
+    </main>
+    <main id="gameover" style="display: none;">
+        <div class="d-flex flex-column  align-self-center w-100 mx-auto">
+            <h2 class="white">Click on the coffin to restart the game</h2>
+            <img src="img/ataud.png" alt="game over" id="restart" class="w-50 mx-auto">
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
