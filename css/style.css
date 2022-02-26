@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 body{
   margin: 0;
   overflow: hidden;
 }
+
 a {
   text-decoration: none !important;
   color: #cce8b3;
   font-style: italic;
 }
+
 .wallpaper {
   position: fixed;
   top: 0;
@@ -49,6 +52,7 @@ a {
 .photo{
   width: 100%;
 }
+
 img:hover{
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);

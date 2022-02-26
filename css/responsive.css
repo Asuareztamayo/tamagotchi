@@ -1,4 +1,4 @@
-@media (max-width: 900px) {
+@media (max-width: 900px) and (orientation: landscape)  {
     .beginning {
         display: flex;
         justify-content: center;
@@ -20,6 +20,7 @@
         -webkit-border-radius: 50px;
         border-radius: 50px;
         color: #cce8b3;
+        font-size: medium;
         }
 
     .logo{
