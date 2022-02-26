@@ -22,7 +22,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: 90px;
+  margin-top: 90px; 
 }
 
 .btnBrown {
@@ -33,21 +33,6 @@ a {
   -webkit-border-radius: 50px;
   border-radius: 50px;
   color: #cce8b3;
-}
-
-input.name{
-    color: #cce8b3;
-    background-color: #6a4f0b;
-    margin-bottom: 160px;
-    border: 2px solid #cce8b3;
-}
-
-.putName{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  
 }
 
 .instructions{

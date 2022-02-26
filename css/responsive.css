@@ -1,0 +1,32 @@
+@media (max-width: 900px) {
+    .beginning {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 0px;
+        margin-left: -30px;
+    }
+    #home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btnBrown {
+        height: 60px;
+        width: 60px;
+        background: #6a4f0b;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        color: #cce8b3;
+        }
+
+    .logo{
+        width: 40%;
+    }
+
+    .yodaImg{
+        width: 80%;
+    }
+}

@@ -29,6 +29,7 @@ $(document).ready(function () {
     intro.style.fontSize = w / 30 + "px";
     historia.style.fontSize = w / 20 + "px";
     parrafos.style.height = h + "px";
+    starwars.volume = 0.02;
 
     //Events
     window.addEventListener("resize", function () {
@@ -160,6 +161,7 @@ $(document).ready(function () {
         Swal.fire({
             imageUrl: "img/yodaJuega.gif",
             imageAlt: "Playing",
+            imageHeight: 250,
         });
     }
 
@@ -167,6 +169,7 @@ $(document).ready(function () {
         Swal.fire({
             imageUrl: "img/yodaDuerme.gif",
             imageAlt: "Sleep grogu, sleep",
+            imageHeight: 250,
         });
     }
 
@@ -174,6 +177,7 @@ $(document).ready(function () {
         Swal.fire({
             imageUrl: "img/yodaCome.gif",
             imageAlt: "Grogu eats",
+            imageHeight: 250,
         });
     }
 
